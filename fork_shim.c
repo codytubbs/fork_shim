@@ -26,7 +26,7 @@
  $ gcc -shared fork_shim.o -ldl -lstdc++ -o fork_shim.so
 
  USAGE:
- # LD_PRELOAD=/path/to/shim_fork.so /opt/puppetlabs/bin/puppet agent -t
+ # LD_PRELOAD=/path/to/fork_shim.so /opt/puppetlabs/bin/puppet agent -t
 
  LOG FILES:
  /tmp/shim_forks_wl.log  [will detail the process (and flags) being checked for]
